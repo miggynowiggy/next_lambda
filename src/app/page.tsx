@@ -1,17 +1,19 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export async function getStaticProps() {
+export async function getTime() {
   const buildDate = Date.now();
   const formattedDate = new Intl.DateTimeFormat("en-US", {
     dateStyle: "long",
     timeStyle: "long",
   }).format(buildDate);
 
-  return { props: { formattedDate } };
+  return formattedDate;
 }
 
-export default function Home({ formattedDate }: any) {
+export default async function Home() {
+  const formattedDate = await getTime()
+
   return (
     <>
       <div className="flex min-h-screen bg-white">
