@@ -1,0 +1,11 @@
+lambda_trial:
+  component: "@sls-next/serverless-component@3.6.0" # use latest version, currently 3.6.0
+  inputs:
+    runtime:
+      defaultLambda: "nodejs18.x"
+      apiLambda: "nodejs18.x"
+      imageLambda: "nodejs18.x"
+    timeout:
+      defaultLambda: 20
+      apiLambda: 20
+      imageLambda: 20
