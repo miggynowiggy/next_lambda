@@ -11,7 +11,7 @@ export default function About() {
             </p>
             <p className="max-w-xl mt-4 text-lg tracking-tight text-gray-600">
               If you could kick the person in the pants responsible for most of your
-              trouble, you wouldn't sit for a month
+              trouble, you would not sit for a month
             </p>
           </div>
         </div>
@@ -31,7 +31,7 @@ export default function About() {
                   </div>
                   <p className="mt-2 text-base text-gray-500">
                     With the ability to share code, track changes and provide
-                    feedback, you'll be able to complete projects faster.
+                    feedback, you will be able to complete projects faster.
                   </p>
                 </div>
               </article>
@@ -46,8 +46,8 @@ export default function About() {
                     </p>
                   </div>
                   <p className="mt-2 text-base text-gray-500">
-                    That's why we've made our SaaS programming product available at
-                    a price that's affordable for everyone
+                    That is why we have made our SaaS programming product available at
+                    a price that&apos;s affordable for everyone
                   </p>
                 </div>
               </article>

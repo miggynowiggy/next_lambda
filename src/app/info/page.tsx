@@ -13,7 +13,7 @@ export default function Info() {
                   <p className="text-2xl font-medium tracking-tight text-black sm:text-4xl">I am a short heading</p>
                   <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
                     Use this paragraph to share information about your company or products. Make
-                    it engaging and interesting, and showcase your brand's personality. Thanks for
+                    it engaging and interesting, and showcase your brand&apos;s personality. Thanks for
                     visiting our website!
                   </p>
                 </div>
@@ -43,7 +43,7 @@ export default function Info() {
                 </div>
                 <div className="mt-2 text-base text-gray-500">
                   Plus, our platform is constantly evolving to meet the changing
-                  needs of the tech industry, ensuring you'll always be ahead.
+                  needs of the tech industry, ensuring you&apos;ll always be ahead.
                 </div>
               </div>
               <div>
@@ -54,7 +54,7 @@ export default function Info() {
                 </div>
                 <div className="mt-2 text-base text-gray-500">
                   Plus, our platform is constantly evolving to meet the changing
-                  needs of the tech industry, ensuring you'll always be ahead.
+                  needs of the tech industry, ensuring you&apos;ll always be ahead.
                 </div>
               </div>
               <div>
@@ -65,7 +65,7 @@ export default function Info() {
                 </div>
                 <div className="mt-2 text-base text-gray-500">
                   Plus, our platform is constantly evolving to meet the changing
-                  needs of the tech industry, ensuring you'll always be ahead.
+                  needs of the tech industry, ensuring you&apos;ll always be ahead.
                 </div>
               </div>
             </dl>

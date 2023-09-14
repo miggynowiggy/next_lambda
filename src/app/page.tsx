@@ -1,7 +1,17 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Home() {
+export async function getStaticProps() {
+  const buildDate = Date.now();
+  const formattedDate = new Intl.DateTimeFormat("en-US", {
+    dateStyle: "long",
+    timeStyle: "long",
+  }).format(buildDate);
+
+  return { props: { formattedDate } };
+}
+
+export default function Home({ formattedDate }: any) {
   return (
     <>
       <div className="flex min-h-screen bg-white">
@@ -14,8 +24,8 @@ export default function Home() {
                 </p>
                 <p className="max-w-xl mt-4 text-base tracking-tight text-gray-600">
                   Use this paragraph to share information about your company or products. Make
-                  it engaging and interesting, and showcase your brand's personality. Thanks for
-                  visiting our website!
+                  it engaging and interesting, and showcase your brand&apos;s personality. Thanks for
+                  visiting our website! This was built { formattedDate }
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center gap-3 mt-10 lg:flex-row lg:justify-start">
@@ -92,7 +102,7 @@ export default function Home() {
                         <div className="flex items-center justify-center w-12 h-12 mx-auto text-black bg-gray-100 rounded-xl">
                           ❖
                         </div>
-                        <p className="mt-5 font-medium leading-6 text-black">CTA's</p>
+                        <p className="mt-5 font-medium leading-6 text-black">CTA&apos;s</p>
                       </div>
                     </div>
                     <div>
