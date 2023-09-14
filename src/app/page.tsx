@@ -1,7 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export async function getTime() {
+export const runtime = 'edge'
+
+async function getTime() {
   const buildDate = Date.now();
   const formattedDate = new Intl.DateTimeFormat("en-US", {
     dateStyle: "long",
